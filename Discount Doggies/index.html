@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&#128054 Discount Doggies</title>
+  <link rel="stylesheet" href="style-account.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="w3.css">
+</head>
+
+<!-- Navigation Section -->
+<section id="navSection">
+    <!-- Full Navigation Bar -->
+    <div id="navBar" class="w3-bar w3-hide-small w3-mobile">
+        <a href="index.html" id="navLogo" class="w3-left">
+            <img id="navLogo" src="img/Doggo.png" alt="Devuno">
+        </a>
+        <div id="navLinks" class="w3-right">
+            <a href="#section-one"><div class="w3-bar-item w3-mobile">Home</div></a>
+        </div>
+    </div>
+    <!-- Mobile Navigation Bar -->
+    <div id="navBarMobile" class="w3-bar w3-show-small w3-hide-medium w3-hide-large w3-mobile">
+        <!-- Sidebar -->
+            <div id="navSidebar" class="w3-left w3-bar-block w3-sidebar w3-animate-left w3-collapse">
+        <!-- Overlay -->
+            <div id="overlay" class="w3-overlay w3-animate-opacity" onclick="w3_close()"></div>
+        <!-- Logo -->
+            <div id="navLogoMobile" class="w3-right">
+                <img
+                src="img/devuno-logo.png" alt="Devuno">
+            </div>
+            <div id="sidebarMenuButton"class="w3-bar-item w3-button w3-hide-large"onclick="w3_open()" ><i class="material-icons">menu</i></div>
+
+    </div>
+</section>
+<!-- Footer -->
+<section id="footer">
+    <div class="w3-content"></div>
+</section>
+
+</body>
+<!-- JS for collapsing mobile sidebar -->
+<script id="collapseScript" type="text/javascript">
+function w3_open() {
+document.getElementById("navSidebar").style.display = "block";
+document.getElementById("overlay").style.display = "block";
+document.getElementById('sidebarMenuButton').style.opacity = "0";
+}
+function w3_close() {
+document.getElementById("navSidebar").style.display = "none";
+document.getElementById("overlay").style.display = "none";
+document.getElementById('sidebarMenuButton').style.opacity = ".8";
+}
+</script>
+
+</html>
