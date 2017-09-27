@@ -1,15 +1,18 @@
-html{
-    background-color: #212121;
+html, body{
+    transition-property: ease;
+
+    max-width: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 /*Navigation Section*/
 #navBar,#navBarMobile{
-    position: relative;
-    background-color: rgba(238, 238, 238, .5);
+    background-color: rgba(63, 127, 191, .5);
 
     box-shadow: 0px 10px 20px 2px rgba(23, 23, 23, 0.1);
-
-    z-index: 3;
 }
 
 #navSidebar{
@@ -18,17 +21,32 @@ html{
     background-color: rgba(33, 33, 33, 0.45);
     color: #eeeeee;
 
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
     z-index: 4;
 
     transition: .2s;
 }
-#navLogo{
-  width: 10px;
-  height: 10px;
+#navSidebar a{
+  position: relative;
+  font-size: 35px;
+  line-height: 2.5;
+  font-weight: 100;
+  font-family: 'Montserrat Light', sans-serif;
+  letter-spacing: 1px;
+  color: #eeeeee;
+  opacity: .8;
+
+  transition: .2s;
 }
+#navSidebar a:hover{
+  opacity: 1;
+}
+#navSidebar a div{
+  position: relative;
+}
+
 #sidebarButton{
     background-color: rgba(0, 0, 0, 0);
     opacity: .8;
@@ -41,35 +59,37 @@ html{
   /*Full Page Nav Styling*/
 #navLogo{
   position: relative;
-  width: 250px;
-  height: 72px;
+  width: 450px;
+  height: 50px;
+
+  transition: .4s;
 }
 #navLogo img{
   position: absolute;
   top: 17px;
   left: 30px;
-  width: 175px;
+  width: 150px;
+
+  transition: .4s;
 }
 #navLinks a div{
   background-color: rgba(33, 33, 33, 0.1);
   color: #212121;
   opacity: .75;
 
-  font-family:'SF Pro Display', 'Roboto', sans-serif;
+  font-family: 'Montserrat Light', sans-serif;
+  font-weight: 100;
   font-size: 17px;
 
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-  transition: .2s;
+  transition: .2s, padding-left .5s, padding-right .5s;
 }
 #navLinks a div:hover{
   background-color: rgba(33, 33, 33, 0.2);
-}
-#navLinks a div:active{
-  background-color: #eeeeee;
 }
 
   /*Mobile Page Nav Styling*/
@@ -84,16 +104,57 @@ html{
   top: 12px;
   right: 25px;
   width: 100px;
-
 }
 
-
 /*Background Image One*/
+#imageSection-one{
+    width: 100%;
+    height: 850px;
+
+    z-index: -1;
+}
+#imageSection-one div{
+    height: 850px;
+}
+#imageSection-one div h1{
+    position: relative;
+    bottom: 575px;
+
+    font-size: 45px;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-weight: 500;
+
+    line-height: 1;
+
+    color: #212121;
+}
+#imageSection-one div h2{
+    position: relative;
+    bottom: 585px;
+
+    font-size: 15px;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-weight: 500;
+
+    color: #212121;
+}
+#downIcon-one{
+    position: relative;
+    bottom: 375px;
+
+    color: #212121;
+}
 #image-one{
     position: relative;
-    background-color: #1c7982;
+    background-image: url("img/Background1.gif");
+    background-position: 90% 50%;
 
-    width: 100%;
+    bottom: 100px;
+    left: -50px;
+
+    filter: blur(15px);
+
+    width: 125%;
     height: 850px;
 
     z-index: -1;
@@ -112,13 +173,347 @@ html{
 
     z-index: 2;
 }
+#section-one-mobile{
+    position: absolute;
+    background-color: rgba(238, 238, 238, 0.85);
 
-/*Background Image Two*/
-#image-two{
-    position: relative;
-    background-color: #8f9544;
+    box-shadow: 0px 10px 20px 2px rgba(23, 23, 23, 0.1);
+
+    top: 725px;
 
     width: 100%;
+    height: 500px;
+
+    z-index: 2;
+}
+#topSection{
+  height: 30%;
+}
+#topSection h1{
+  position: relative;
+  top: 25px;
+
+  font-size: 40px;
+  font-family: 'Montserrat Regular', sans-serif;
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+#topSection h2{
+  position: relative;
+  top: 15px;
+
+  font-size: 15px;
+  font-family: 'Montserrat Light', sans-serif;
+  font-weight: 100;
+}
+
+#sectionOneLeft{
+    height: 400px;
+}
+#sectionOneLeft h1{
+    position: relative;
+    top: 100px;
+
+    margin-left: 50px;
+
+    font-size: 50px;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-weight: 600;
+
+    color: #212121;
+}
+#sectionOneLeft h2{
+    position: relative;
+    top: 75px;
+
+    margin-left: 50px;
+    margin-right: 175px;
+
+    font-size: 18px;
+    font-family: 'Montserrat Light', sans-serif;
+    font-weight: 100;
+
+    color: #212121;
+}
+#sectionOneRight{
+    height: 400px;
+}
+#herald{
+  width:25%;
+  height:25%auto;
+}
+#sectionOneRight h1 i{
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+#sectionOneRight h4 i{
+  position: absolute;
+  right: 20px;
+}
+
+#moreInfo{
+  position: absolute;
+  bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#moreInfo a{
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  background-color: #BFDBDB;
+
+  text-decoration: none;
+
+  font-family: 'Montserrat Regular', sans-serif;
+  font-weight: 600;
+
+  border-radius: 5px;
+
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+
+  transition: .1s;
+}
+#moreInfo a:hover{
+  background-color: #a2bbbb;
+}
+#moreInfo i{
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+#downArrow{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+
+  visibility: hidden;
+}
+#webDev{
+    position: relative;
+
+    width:30%;
+}
+.cards{
+    position: relative;
+
+    right: 10px;
+    top: 30px;
+    height: 340px;
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 15px 20px 1px rgba(0, 0, 0, 0.3);
+
+    transition: .3s;
+}
+#webDev div h1{
+    position: relative;
+    font-size: 22px;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-weight: 600;
+
+    margin-left: 10px;
+    top: 10px;
+
+    color: #212121;
+}
+#webDev div h4{
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Montserrat Light', sans-serif;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#itServices{
+    position: relative;
+
+    width: 30%;
+}
+#itServices div h1{
+    position: relative;
+    font-size: 22px;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-weight: 600;
+
+    margin-left: 10px;
+    top: 10px;
+
+    color: #212121;
+}
+#itServices div h4{
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Montserrat Light', sans-serif;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#graphicDesign{
+    position: relative;
+
+    width: 30%;
+}
+#graphicDesign div h1{
+    position: relative;
+    font-size: 22px;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-weight: 600;
+
+    margin-left: 10px;
+    top: 10px;
+
+    color: #212121;
+}
+#graphicDesign div h4{
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Montserrat Light', sans-serif;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/*Mobile Cards section-one*/
+.cardsMobile{
+    height: 300px;
+
+    width: 80%;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 15px 20px 1px rgba(0, 0, 0, 0.3);
+
+    transition: .3s;
+}
+#bottomSection{
+  width: 100%;
+
+  height: 68%;
+}
+#webDevMobile{
+    position: relative;
+}
+#webDevMobile div h1{
+    position: relative;
+    font-size: 22px;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-weight: 600;
+
+    margin-left: 10px;
+    top: 10px;
+
+    color: #212121;
+}
+#webDevMobile div h4{
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Montserrat Light', sans-serif;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#itServicesMobile{
+    position: relative;
+}
+#itServicesMobile div h1{
+    position: relative;
+    font-size: 22px;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-weight: 600;
+
+    margin-left: 10px;
+    top: 10px;
+
+    color: #212121;
+}
+#itServicesMobile div h4{
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Montserrat Light', sans-serif;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#graphicDesignMobile{
+    position: relative;
+}
+#graphicDesignMobile div h1{
+    position: relative;
+    font-size: 22px;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-weight: 600;
+
+    margin-left: 10px;
+    top: 10px;
+
+    color: #212121;
+}
+#graphicDesignMobile div h4{
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Montserrat Light', sans-serif;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+/*Background Image Two*/
+#imageSection-two{
+    width: 100%;
+    height: 850px;
+
+    z-index: -1;
+}
+#imageSection-two div h1{
+    position: relative;
+    bottom: 475px;
+
+    font-size: 45px;
+    font-family: 'Montserrat Light', sans-serif;
+    font-weight: 100;
+
+    line-height: 1;
+
+    color: #eeeeee;
+}
+#teamIcon-two{
+    position: relative;
+    bottom: 575px;
+
+    color: #eeeeee;
+}
+#image-two{
+    position: relative;
+    background-image: url("img/stock/imageTwo.png");
+    background-position: 50% 50%;
+
+    bottom: 100px;
+    left: -50px;
+
+    filter: blur(15px);
+
+    width: 125%;
     height: 850px;
 
     z-index: -1;
@@ -139,16 +534,26 @@ html{
 }
 
 /*Background Image Three*/
-#image-three{
-    position: relative;
-    background-color: #954464;
-
+#imageSection-three{
     width: 100%;
     height: 850px;
 
     z-index: -1;
 }
+#image-three{
+    position: relative;
+    background-image: url("img/stock/imageTwo.png");
+    background-position: 50% 150%;
 
+    left: -50px;
+
+    filter: blur(15px);
+
+    width: 125%;
+    height: 850px;
+
+    z-index: -1;
+}
 #section-three{
     position: absolute;
     background-color: rgba(238, 238, 238, 0.85);
@@ -164,14 +569,46 @@ html{
 }
 
 /*Background Image Four*/
-#image-four{
+#imageSection-four{
     position: relative;
-    background-color: #7b4495;
 
     width: 100%;
     height: 850px;
 
     z-index: -1;
+}
+#image-four{
+    position: relative;
+    background-image: url("img/stock/imageThree.png");
+    background-position: 50% 175%;
+
+    bottom: 0px;
+    left: -50px;
+
+    filter: blur(5px);
+
+    width: 125%;
+    height: 950px;
+
+    z-index: -1;
+}
+#imageSection-four h1{
+    position: relative;
+    bottom: 725px;
+
+    font-size: 45px;
+    font-family: 'Montserrat Light', sans-serif;
+    font-weight: 100;
+
+    line-height: 1;
+
+    color: #212121;
+}
+#contactIcon-four{
+    position: relative;
+    bottom: 825px;
+
+    color: #212121;
 }
 
 #section-four{
@@ -180,7 +617,7 @@ html{
 
     box-shadow: 0px 10px 20px 2px rgba(23, 23, 23, 0.1);
 
-    top: 3070px;
+    bottom: 0px;
 
     width: 100%;
     height: 400px;
@@ -198,18 +635,18 @@ html{
 }
 
 
-/*Media Query for increasing height of elements when smaller than 500px*/
+/*Media Query for increasing height of elements when smaller than 600px*/
 @media only screen and (max-width: 600px) {
-  #image-one{
+  #imageSection-one{
       height: 1050px;
   }
-  #image-two{
+  #imageSection-two{
       height: 1050px;
   }
-  #image-three{
+  #imageSection-three{
       height: 1050px;
   }
-  #image-four{
+  #imageSection-four{
       height: 1050px;
   }
   #section-one{
@@ -225,24 +662,126 @@ html{
   }
   #section-four{
       height: 500px;
-      top: 3775px;
   }
-}
-
-@media only screen and (min-width: 1920px) {
-  #image-one{
-      height: 950px;
+  #imageSection-two div h1{
+      bottom: 300px;
+  }
+  #teamIcon-two{
+      bottom: 400px;
   }
   #image-two{
-      height: 950px;
+      background-position: 50% 50%;
   }
   #image-three{
-      height: 1050px;
+      background-position: 50% 100%;
   }
   #image-four{
+    background-position: 50% 150%;
+  }
+  #imageSection-four h1{
+    bottom: 510px;
+    }
+    #contactIcon-four{
+    bottom: 610px;
+    }
+
+}
+/*To prevent wrapping of navBar before 600px to mobile*/
+@media only screen and (max-width: 950px){
+    #navLinks a div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #navLogo{
+        width: 150px;
+    }
+    #navLogo img{
+        width:100px;
+        top: 22px;
+    }
+}
+/*To adapt for wrapping of text elements before conversion to mobile*/
+@media only screen and (max-width: 1280px){
+    #sectionOneLeft h1{
+        top: 100px;
+
+        font-size: 42px;
+    }
+    #sectionOneLeft h2{
+        top: 90px;
+
+        font-size: 18px;
+
+        margin-right: 25px;
+
+    }
+}
+/*To prevent column wrapping*/
+@media only screen and (max-width: 1370px){
+  #webDev, #itServices, #graphicDesign{
+    width: 29%;
+  }
+  #webDev div h4, #itServices div h4, #graphicDesign div h4{
+    font-size: 12px;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  #webDev div h4 i, #itServices div h4 i, #graphicDesign div h4 i{
+    visibility: hidden;
+  }
+  #moreInfo{
+    visibility: hidden;
+  }
+  #downArrow{
+    visibility: visible;
+  }
+  .cards{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+/*To increase navBar size*/
+@media only screen and (min-width: 1920px) {
+    #navLinks a div{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    #navLogo{
+        height: 72px;
+    }
+    #navLogo img{
+        width: 175px;
+        top: 20px;
+    }
+    #imageSection-one{
+      height: 950px;
+    }
+  #imageSection-two{
+      height: 950px;
+  }
+  #imageSection-three{
+      height: 1050px;
+  }
+  #imageSection-four{
       height: 1150px;
   }
   #section-one{
+      height: 550px;
+  }
+  #sectionOneLeft{
+      height: 550px;
+  }
+  #sectionOneLeft h1{
+      top: 200px;
+      left: 40px;
+  }
+  #sectionOneLeft h2{
+      top: 180px;
+      left: 40px;
+  }
+  #sectionOneRight{
       height: 550px;
   }
   #section-two{
@@ -255,5 +794,141 @@ html{
   }
   #section-four{
       height: 550px;
-      top: 3625px;
+      bottom: 0px;
   }
+  #imageSection-two div h1{
+      bottom: 400px;
+  }
+  #teamIcon-two{
+      bottom: 500px;
+  }
+  #image-four{
+    background-position: 25% 125%;
+  }
+  #imageSection-four h1{
+    bottom: 550px;
+  }
+  #contactIcon-four{
+    bottom: 650px;
+  }
+  .cards{
+    height: 450px;
+
+    margin-left: 25px;
+    margin-right: 25px;
+
+    right: 0px;
+    left: 16px;
+    top: 40px;
+  }
+  #webDev, #itServices, #graphicDesign{
+    width: 28%;
+  }
+  #webDev div h4, #itServices div h4, #graphicDesign div h4{
+    font-size: 18px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  /*login form style*/
+  @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+  .login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,.form button:active,.form button:focus {
+    background: #43A047;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  .form .register-form {
+    display: none;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .container .info {
+    margin: 50px auto;
+    text-align: center;
+  }
+  .container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+  }
+  .container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+  }
+  .container .info span a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .container .info span .fa {
+    color: #EF3B3A;
+  }
+  body {
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
