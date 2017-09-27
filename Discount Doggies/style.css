@@ -59,8 +59,8 @@ html, body{
   /*Full Page Nav Styling*/
 #navLogo{
   position: relative;
-  width: 250px;
-  height: 65px;
+  width: 450px;
+  height: 50px;
 
   transition: .4s;
 }
@@ -238,6 +238,10 @@ html, body{
 }
 #sectionOneRight{
     height: 400px;
+}
+#herald{
+  width:25%;
+  height:25%auto;
 }
 #sectionOneRight h1 i{
   position: relative;
