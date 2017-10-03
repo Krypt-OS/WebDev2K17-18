@@ -163,9 +163,11 @@ html, body{
 #herald,#geoff,#rumbi{
   width:200px;
   height:200px;
-  top:150px;
+  margin-left:520px
 }
-
+#h3,#h4,#h5{
+  margin-left:595px;
+}
 #h3{
   font-size: 25px;
   line-height: 2.5;
@@ -195,6 +197,22 @@ html, body{
   color: #eeeeee;
   opacity: .8;
 
+}
+#p{
+  font-size: 25px;
+  line-height: 2.5;
+  font-weight: 100;
+  font-family: 'Montserrat Light', sans-serif;
+  letter-spacing: 1px;
+  color: #eeeeee;
+  opacity: .8;
+  margin-left:575px;
+}
+#gif{
+  padding-left:80px;
+}
+#footer{
+  background-color:#262626;
 }
 
   /*login form style*/
@@ -289,11 +307,11 @@ html, body{
     color: #EF3B3A;
   }
   body {
-    background: #76b852; /* fallback for old browsers */
-    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-    background: -moz-linear-gradient(right, #76b852, #8DC26F);
-    background: -o-linear-gradient(right, #76b852, #8DC26F);
-    background: linear-gradient(to left, #76b852, #8DC26F);
+    background: #262626; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #30aae8, #2691e2);
+    background: -moz-linear-gradient(right, #30aae8, #2691e2);
+    background: -o-linear-gradient(right, #30aae8, #2691e2);
+    background: linear-gradient(to left, #30aae8, #2691e2);
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
